@@ -170,11 +170,6 @@ module.exports = {
           'sass-loader'
         ]
       },
-      {
-        resourceQuery: /\bblockType=i18n\b/,
-        loader: '@kazupon/vue-i18n-loader',
-        options: { modules: true }
-      },
       { test: /.json$/i, loader: 'json-loader', type: 'javascript/auto' },
     ]
   }

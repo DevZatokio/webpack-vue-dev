@@ -20,9 +20,9 @@ module.exports = () => {
   // environment variables env.js
   let env;
   if (process.env.NODE_ENV === 'production') {
-    env = envJS.default.production
+    env = envJS.production
   } else {
-    env = envJS.default.local
+    env = envJS.local
   }
   const obj = {
     app: {},

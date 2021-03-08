@@ -1,0 +1,9 @@
+@import './variable';
+
+.page-black{
+  background-color: $primary;
+}
+
+*{
+ color: $secondary; 
+}

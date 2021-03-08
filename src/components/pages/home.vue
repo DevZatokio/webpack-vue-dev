@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p>home router  router router router djwandjawbdabj</p>
+  <div class="container page-black">
+    
   </div>
 </template>
 

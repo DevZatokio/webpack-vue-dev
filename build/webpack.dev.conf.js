@@ -4,7 +4,7 @@
  * @module build/webpack.dev.conf
  */
 
-const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+ var FailOnErrorsPlugin = require('fail-on-errors-webpack-plugin');
 const {merge} = require('webpack-merge');
 const webpack = require('webpack');
 const path = require('path');
@@ -22,7 +22,7 @@ for (let name of Object.keys(baseWebpackConfig.entry)) {
 const webpackConfig = {
   devtool: config.dev.devtool,
 
-  plugins: [new webpack.HotModuleReplacementPlugin(), new webpack.NoEmitOnErrorsPlugin(), new FriendlyErrorsPlugin()]
+  plugins: [new webpack.HotModuleReplacementPlugin(), new webpack.NoEmitOnErrorsPlugin(), new FailOnErrorsPlugin({failOnErrors:true,failOnWarnings:true})]
 };
 
 console.log('base webpack config' , baseWebpackConfig);
