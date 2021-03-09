@@ -2,8 +2,15 @@
 
 .page-black{
   background-color: $primary;
+  max-height: 100%;
 }
 
 *{
- color: $secondary; 
+ color: $secondary;
+ font-family: "Savoye LET Plain";
+}
+
+.nav-border{
+  border-bottom-color: $secondary;
+  border-bottom-width: 2;
 }

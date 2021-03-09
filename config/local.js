@@ -28,7 +28,7 @@ module.exports = {
       `connect-src 'self' *.hotjar.com *.google.com *.blogspot.com *.buttercms.com *.firebaseio.com https://*.googleapis.com wss://realtime.ably.io *.ably.io *.cloudfront.net *.sharethis.com wss://localhost:* localhost:* ws: *.amazonaws.com *.facebook.com wss://chats.mejormunicipio.com/*/*  ws://chats.mejormunicipio.com ws: *.mejormunicipio.com http://chats.mejormunicipio.com`,
       `script-src 'self' 'nonce-2726c7f26c' *.hotjar.com *.google.com *.gstatic.com *.blogspot.com *.gruveo.com *.sharethis.com cdnjs.cloudflare.com *.googleapis.com *.facebook.net *.facebook.com stackpath.bootstrapcdn.com code.jquery.com`,
       `style-src 'self' 'unsafe-inline' *.fontawesome.com cdnjs.cloudflare.com *.googleapis.com stackpath.bootstrapcdn.com`,
-      `font-src data: *.fontawesome.com cdnjs.cloudflare.com *.gstatic.com stackpath.bootstrapcdn.com`,
+      `font-src 'self' data: blob: *.fontawesome.com cdnjs.cloudflare.com *.gstatic.com stackpath.bootstrapcdn.com `,
       `frame-src *.youtube.com *.gruveo.com *.facebook.com *.hotjar.com *.google.com`,
       `manifest-src 'self'`,
       `object-src 'self'`,

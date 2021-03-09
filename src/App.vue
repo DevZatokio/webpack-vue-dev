@@ -1,17 +1,31 @@
 <template>
-  <div id="app" class="container-fluid page-black">
-    <h1>Hola mundo</h1>
-    <router-view style="padding-top: 83px"/>
+  <div id="app" class="page-black mh-100">
+    <nav class="navbar nav-border">
+      <ul class="nav justify-content-start">
+        <img src="/static/logo-t.png" width="200" height="80" class="nav-item" alt="" />
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+    <router-view style="padding-top: 83px" />
   </div>
 </template>
 
 <script>
-
-
 export default {
-  components: {
-
-  },
+  components: {},
   name: "App",
   data() {
     return {};
@@ -31,6 +45,5 @@ export default {
   }
 };
 </script>
-
 
 <style src="@/assets/styles/main.scss" lang="scss"></style>
